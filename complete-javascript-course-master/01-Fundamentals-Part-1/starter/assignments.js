@@ -6,7 +6,7 @@ console.log(country);
 console.log(continent);
 console.log(population);
 
-// second assignment------------------
+// Coding Exercise 1: CHALLENGE #1------------------
 // for first data value-----
 let johnMass = 92; 
 let johnHeight = 1.95;
@@ -22,9 +22,18 @@ console.log(markBMI1);
 let markHigherBMI = markBMI1 > johnBMI1
 console.log(markHigherBMI);
 
-// console.log(markHigherBMI = (markBMI1 = markMass / markHeight ** 2) > (johnBMI1 = johnMass / johnHeight ** 2))
+// -----------------------------or-------------------------
 
-// for second given data value ------
+// let massMark = 78;
+// let heightMark = 1.69;
+// let massJohn = 92;
+// let heightJohn = 1.95;
+// let BMIMark = massMark / (heightMark * heightMark);
+// let BMIJohn = massJohn / (heightJohn * heightJohn);
+// let markHigherBMI = BMIMark > BMIJohn;
+// console.log(BMIMark, BMIJohn, markHigherBMI);
+
+// ---------------------for second given data value ------
 
 johnMass = 85; 
 johnHeight = 1.76;
