@@ -30,24 +30,29 @@ console.log(BMIMark, BMIJohn, markHigherBMI);
 
 // Coding Exercise 2: CHALLENGE #2---------Topic :- strings and template literals, If/else statements----------
 
-if(BMIMark > BMIJohn){
+if (BMIMark > BMIJohn) {
     console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
-} else{
+} else {
     console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
 }
 
 // Coding Exercise 3: CHALLENGE #3--------Topic :- Type Conversion and Coercion, Truthy and Falsy Values, Equality Operators: == vs. ===, Boolean Logic, Logical Operators------
 
-const scoreDolphins = (96 + 108 + 89)/3;
-const scoreKoalas = (88 + 91 + 110)/3;
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
 console.log(scoreDolphins, scoreKoalas);
 
-if(scoreDolphins > scoreKoalas) {
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
     console.log("Dolphin win the trophy");
 }
-  else if( scoreKoalas > scoreDolphins){
-      console.log("Koalas win the trophy");
-  }
-  else{
-      console.log("Both win the trophy");
-  }
+else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+    console.log("Koalas win the trophy");
+}
+else if (scoreDolphins === scoreKoalas && scoreDolphins && scoreKoalas >= 100) {
+    console.log("Both win the trophy");
+}
+else{
+    console.log("no one wins the trophy");
+}
+
+// Coding Exercise 4: CHALLENGE #4
