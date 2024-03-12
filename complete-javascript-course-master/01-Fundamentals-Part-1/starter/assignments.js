@@ -55,4 +55,25 @@ else{
     console.log("no one wins the trophy");
 }
 
+// Coding Exercise 4: practice
+
+const day = 'noon';
+const month = 'april'
+if(day === 'monday'){
+    console.log("record video lecture");
+}
+else if (day === 'noon' || day === '23/march/2024' ){
+    console.log("write scipt of seconnd lecture");
+    console.log("ready to record your second lecture")
+}
+else if (day === 'thursday && 11/03/2024' ){
+    console.log(" record second video leacture");
+}
+else if (day === 'friday' && month === 'april' && day !== '2024' ){
+    console.log("this is our special day to start new things");
+}
+else{
+    console.log("not a valid day");
+}
+
 // Coding Exercise 4: CHALLENGE #4
