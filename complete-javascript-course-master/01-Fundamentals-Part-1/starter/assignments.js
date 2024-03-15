@@ -1,3 +1,5 @@
+// JavaScript Fundamentals – Part 1
+
 // First Assignment------------------
 let country = "india"
 let continent = "asia"
