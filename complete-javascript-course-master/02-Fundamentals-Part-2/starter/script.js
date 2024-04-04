@@ -66,7 +66,28 @@ const jonas = {
     friends : ['Michael', 'Peter', 'Steven']
 };
 console.log(jonas);
-// --------byusing bracket notation--------
+
+// --------print a string byusing bracket notation--------
 console.log(`${jonas['firstName']} has ${jonas['friends'].length} friends, and his bestfriend is called ${jonas['friends'][0]}`);
-// ------------byusing Dot Notation ----------
+// --------print a string byusing Dot Notation ----------
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his bestfriend is called ${jonas.friends[0]}`);
+
+////-------------- this chalange is given in object method video ---------------////
+ const payal = {
+    firstName : 'Payal',
+    lastName : 'Porwal',
+    birthYeah : 1991,
+    job : 'teacher',
+    friends : ['Michael', 'Peter', 'Steven'],
+    hasDriverLicense : 25,
+    calcAge : function() {
+        this.age = 2037 - this.birthYeah;
+        return this.age ;
+        }
+ };
+console.log(payal.calcAge());
+console.log(payal.age);
+console.log(payal.age);
+console.log(payal.age);
+//  ---------print a string given in video---------
+console.log(`${payal.firstName} is a ${payal.age} year old teacher, and she has a ${payal.hasDriverLicense === 5*5 ? 'driver License' : 'no driver license'}`);
