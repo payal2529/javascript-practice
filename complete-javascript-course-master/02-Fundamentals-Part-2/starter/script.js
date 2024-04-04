@@ -80,14 +80,18 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his bes
     job : 'teacher',
     friends : ['Michael', 'Peter', 'Steven'],
     hasDriverLicense : 25,
+
     calcAge : function() {
         this.age = 2037 - this.birthYeah;
         return this.age ;
-        }
+        },
+
+    getSummary : function() {
+      return (`${payal.firstName} is a ${this.calcAge()} year old ${payal.job}, and she has ${payal.hasDriverLicense ? 'a' : 'no'} driver's license`);
+    }
  };
 console.log(payal.calcAge());
 console.log(payal.age);
 console.log(payal.age);
 console.log(payal.age);
-//  ---------print a string given in video---------
-console.log(`${payal.firstName} is a ${payal.age} year old teacher, and she has a ${payal.hasDriverLicense === 5*5 ? 'driver License' : 'no driver license'}`);
+console.log(payal.getSummary());
