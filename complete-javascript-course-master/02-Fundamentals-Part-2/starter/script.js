@@ -87,7 +87,7 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his bes
         },
 
     getSummary : function() {
-      return (`${payal.firstName} is a ${this.calcAge()} year old ${payal.job}, and she has ${payal.hasDriverLicense ? 'a' : 'no'} driver's license`);
+      return (`${this.firstName} is a ${this.calcAge()} year old ${this.job}, and she has ${this.hasDriverLicense ? 'a' : 'no'} driver's license`);
     }
  };
 console.log(payal.calcAge());
@@ -95,3 +95,38 @@ console.log(payal.age);
 console.log(payal.age);
 console.log(payal.age);
 console.log(payal.getSummary());
+
+
+// -------------------------Coding Exercise 7: CHALLENGE #3-----------------------
+const mark = {
+    fullName : 'Mark Miller',
+    mass : 78,
+    height : 1.69,
+    
+    calcBMI : function(){
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+}
+console.log(mark.calcBMI());
+
+const john = {
+    fullName : 'John Smith',
+    mass : 92,
+    height : 1.95,
+    
+    calcBMI : function(){
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+     }
+}
+console.log(john.calcBMI());
+
+if (mark.bmi > john.bmi) {
+  console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`)
+} else if (john.bmi > mark.bmi) {
+  console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`)
+}
+
+// --------by using conditional operator----------
+// console.log(`${john.bmi > mark.bmi ? `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!` : `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`}`);
